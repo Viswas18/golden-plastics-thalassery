@@ -4,7 +4,7 @@ import './WhatsAppButton.css';
 const WhatsAppButton = () => {
     // Configurable WhatsApp Number - Placeholder until user provides one
     // Format: Country code + Number (e.g., 919876543210)
-    const phoneNumber = '919846052210';
+    const phoneNumber = '919497843520';
     const message = encodeURIComponent("Hello! I'm interested in your services.");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
