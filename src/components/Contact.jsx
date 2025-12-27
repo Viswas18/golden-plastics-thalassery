@@ -35,6 +35,15 @@ const Contact = () => {
                             loading="lazy"
                             title="Golden Plastics Location"
                         ></iframe>
+                        <a
+                            href="https://www.google.com/maps/dir/?api=1&destination=Golden+Plastics+And+Switch+Boards,+Thalassery"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-primary"
+                            style={{ display: 'block', width: 'fit-content', margin: '1rem auto 0', textAlign: 'center' }}
+                        >
+                            Get Directions
+                        </a>
                     </div>
                 </div>
             </div>
