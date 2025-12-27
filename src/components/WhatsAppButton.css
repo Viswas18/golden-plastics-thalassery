@@ -1,0 +1,62 @@
+.whatsapp-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    /* Glassmorphism background - Dark with blur */
+    background-color: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* Icon Color - Classic WhatsApp Green */
+    color: #25D366;
+
+    /* Gold Border */
+    border: 1px solid rgba(212, 175, 55, 0.4);
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    cursor: pointer;
+    text-decoration: none;
+
+    /* Pulse Animation setup */
+    animation: pulse-gold 3s infinite;
+}
+
+.whatsapp-button:hover {
+    transform: translateY(-4px) scale(1.05);
+    background-color: rgba(15, 23, 42, 0.9);
+    border-color: rgba(212, 175, 55, 0.8);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+    color: #2bf174;
+    /* Slightly brighter green on hover */
+}
+
+.whatsapp-button svg {
+    width: 35px;
+    height: 35px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes pulse-gold {
+    0% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+    }
+}
+
+/* Animations included in index.css or via keyframes if needed, 
+   but simple hover effects are usually sufficient for this button. */

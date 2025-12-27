@@ -9,10 +9,10 @@ import houseImg from '../assets/house-name-board.png';
 export const products = [
     {
         id: 1,
-        name: "Hylam Switch Board",
+        name: "Switch Board",
         category: "Switch Boards",
         image: hylamImg,
-        description: "Durable and classic hylam switch boards for industrial and home use."
+        description: "Durable and classic switch boards for industrial and home use."
     },
     {
         id: 2,

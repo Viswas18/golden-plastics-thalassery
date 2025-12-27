@@ -15,7 +15,7 @@ const Hero = () => {
                     <span className="text-gold">Acrylic Work</span>
                 </h1>
                 <p className="hero-subtitle">
-                    Laser Cutting • Switch Boards • Sign Boards • Plastic Products
+                    Laser Cutting • Sign Boards • Switch Boards • Plastic Works
                 </p>
                 <div className="hero-buttons">
                     <a href="#products" className="btn-primary">Our Products</a>

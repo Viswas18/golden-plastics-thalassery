@@ -4,12 +4,6 @@ import './Services.css';
 const Services = () => {
     const services = [
         {
-            id: 1,
-            title: "Hylam Switch Boards",
-            description: "Custom designed hylam switch boards for home and office.",
-            icon: "⚡"
-        },
-        {
             id: 2,
             title: "Laser Cutting",
             description: "Precision laser cutting for acrylic and other materials.",
@@ -38,6 +32,12 @@ const Services = () => {
             title: "Mementos",
             description: "Custom mementos and multi-wood letters.",
             icon: "🏆"
+        },
+        {
+            id: 1,
+            title: "Switch Boards",
+            description: "Custom designed switch boards for home and office.",
+            icon: "⚡"
         }
     ];
 

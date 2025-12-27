@@ -21,7 +21,7 @@ const Contact = () => {
                         </div>
                         <div className="info-item">
                             <h3>Opening Hours</h3>
-                            <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+                            <p>Mon - Sat: 8:30 AM - 7:30 PM</p>
                             <p>Sun: Closed</p>
                         </div>
                     </div>
