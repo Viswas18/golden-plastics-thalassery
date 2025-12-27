@@ -27,7 +27,7 @@ const Contact = () => {
                     </div>
                     <div className="map-container">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.428669769348!2d75.492!3d11.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDQ1JzAwLjAiTiA3NcKwMjknMzEuMiJF!5e0!3m2!1sen!2sin!4v1625641234567!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3906.1905485802667!2d75.4960565!3d11.7516228!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4264f15048035%3A0x2186a5d4e4a5601e!2sGolden%20Plastics%20And%20Switch%20Boards!5e0!3m2!1sen!2sin!4v1766856179581!5m2!1sen!2sin"
                             width="100%"
                             height="350"
                             style={{ border: 0 }}
