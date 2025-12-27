@@ -1,16 +1,65 @@
-# React + Vite
+# Golden Plastics
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application for **Golden Plastics**, a business specializing in high-quality signage, engraving, and custom plastic works. This project showcases the company's products, services, and provides an interactive way for customers to connect.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Product Gallery**: Showcase of products including Hylam Switch Boards, Laser Cutting Work, LED Sign Boards, Granite Engraving, and custom Mementos.
+- **Service Listings**: Detailed information about the services offered (Laser cutting, Engraving, etc.).
+- **AI Chatbot**: Integrated AI assistant to answer customer queries instantly.
+- **Responsive Design**: Fully responsive layout optimized for all devices.
+- **Contact Section**: Easy access to contact information.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend Library**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **AI Integration**: [Vercel AI SDK](https://sdk.vercel.ai/docs) (Google Provider)
+- **Styling**: Vanilla CSS with modern design principles (Glassmorphism, Dark Mode aesthetics)
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these steps to set up the project locally.
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/Viswas18/golden-plastics.git
+    cd golden-plastics
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+    The application will be available at `http://localhost:5173`.
+
+## 📁 Project Structure
+
+```
+golden-plastics/
+├── public/              # Static assets
+├── src/
+│   ├── assets/          # Images and optimization assets
+│   ├── components/      # Reusable React components (Hero, Navbar, etc.)
+│   ├── data/            # Static data files (products.js)
+│   ├── App.jsx          # Main application component
+│   └── main.jsx         # Entry point
+├── package.json         # Project dependencies and scripts
+└── vite.config.js       # Vite configuration
+```
+
+## 📜 License
+
+All rights reserved. © 2025 Golden Plastics.
