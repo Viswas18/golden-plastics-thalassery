@@ -7,9 +7,7 @@
     align-items: center;
     position: relative;
     margin-top: -80px;
-    /* Counteract padding-top from section-hero if needed, or just standard 100vh layout */
     padding-top: 80px;
-    /* Space for navbar */
 }
 
 .hero-content {
@@ -32,7 +30,6 @@
 .hero-subtitle {
     font-size: 1.2rem;
     color: #CBD5E1;
-    /* Slate-300 */
     margin-bottom: 2.5rem;
     max-width: 600px;
     margin-left: auto;
@@ -72,8 +69,37 @@
     }
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+        /* Fixed background can be jumpy on mobile */
+    }
+
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        /* Reduced font size */
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        /* Stack buttons */
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        gap: 15px;
+    }
+
+    .btn-primary,
+    .btn-outline {
+        width: 100%;
+        /* Full width buttons */
+        display: block;
+        text-align: center;
     }
 }

@@ -9,6 +9,8 @@
     justify-content: center;
     gap: 15px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
+    /* Allow wrapping on small screens */
 }
 
 .filter-btn {
@@ -82,4 +84,17 @@
 .product-info p {
     color: #94A3B8;
     font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .products-section {
+        padding: 60px 0;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        /* Force 1 column on mobile if auto-fill is too wide */
+        padding: 0 10px;
+    }
 }
