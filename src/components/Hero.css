@@ -1,13 +1,15 @@
 .hero {
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: -80px;
-    padding-top: 80px;
+    padding-top: 80px; /* Offset for fixed navbar if present */
+    box-sizing: border-box;
 }
 
 .hero-content {
