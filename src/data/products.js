@@ -3,6 +3,7 @@ import laserImg from '../assets/laser-cutting.png';
 import ledImg from '../assets/led-sign-board.png';
 import graniteImg from '../assets/oommen-chandy-engraving.png';
 import woodImg from '../assets/multi-wood-letters.png';
+import woodenNameBoardImg from '../assets/wooden-name-board.png';
 import houseImg from '../assets/house-name-board.png';
 
 export const products = [
@@ -39,7 +40,14 @@ export const products = [
         name: "Multi-Wood Letters",
         category: "Mementos",
         image: woodImg,
-        description: "Custom crafted multi-wood letters and mementos."
+        description: "Custom crafted multi-wood letters for home decor and gifting."
+    },
+    {
+        id: 7,
+        name: "Wooden Name Board",
+        category: "Sign Boards",
+        image: woodenNameBoardImg,
+        description: "Elegant wooden house name boards with engraved lettering."
     },
     {
         id: 6,

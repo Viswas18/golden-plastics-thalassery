@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useChat } from 'ai/react';
+import { useChat } from '@ai-sdk/react';
 import './Chatbot.css';
 
 const Chatbot = () => {
