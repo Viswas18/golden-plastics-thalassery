@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useChat } from 'ai/react';
 import './Chatbot.css';
 
 const Chatbot = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat();
 
     return (
         <div className="chatbot-wrapper">
@@ -12,8 +14,24 @@ const Chatbot = () => {
                     <button onClick={() => setIsOpen(false)}>×</button>
                 </div>
                 <div className="chatbot-body">
-                    <p>Hello! I am currently offline. Please call us for immediate assistance.</p>
+                    {messages.length === 0 && (
+                        <p className="chatbot-welcome">Hello! I'm here to help you with our products and services.</p>
+                    )}
+                    {messages.map(m => (
+                        <div key={m.id} className={`chat-message ${m.role === 'user' ? 'user' : 'ai'}`}>
+                            {m.content}
+                        </div>
+                    ))}
+                    {isLoading && <div className="chat-loading">Thinking...</div>}
                 </div>
+                <form className="chatbot-input" onSubmit={handleSubmit}>
+                    <input
+                        value={input}
+                        onChange={handleInputChange}
+                        placeholder="Ask me anything..."
+                    />
+                    <button type="submit" disabled={isLoading}>➤</button>
+                </form>
             </div>
             <button
                 className="chatbot-fab"
